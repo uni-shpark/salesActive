@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Apr 14 15:51:32 KST 2020
+https\://repo.maven.apache.org/maven2/.lastUpdated=1586847092973
+https\://repository.jboss.org/nexus/content/groups/public/.error=Could not transfer artifact com.github.fge\:json-patch\:pom\:1.3 from/to jboss (https\://repository.jboss.org/nexus/content/groups/public/)\: Transfer failed for https\://repository.jboss.org/nexus/content/groups/public/com/github/fge/json-patch/1.3/json-patch-1.3.pom
+@default-jboss-https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1586847092456

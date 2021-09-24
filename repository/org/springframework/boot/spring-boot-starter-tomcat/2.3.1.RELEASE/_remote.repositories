@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jul 09 11:18:03 KST 2020
+spring-boot-starter-tomcat-2.3.1.RELEASE.jar>central=
+spring-boot-starter-tomcat-2.3.1.RELEASE-sources.jar>central=
+spring-boot-starter-tomcat-2.3.1.RELEASE.pom>central=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:49:39 KST 2020
+lucene-spatial3d-7.7.2-sources.jar>central=
+lucene-spatial3d-7.7.2.jar>central=
+lucene-spatial3d-7.7.2.pom>central=

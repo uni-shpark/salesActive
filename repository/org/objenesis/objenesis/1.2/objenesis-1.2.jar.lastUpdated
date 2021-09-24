@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Apr 14 15:52:06 KST 2020
+https\://repo.maven.apache.org/maven2/.lastUpdated=1586847126195
+https\://repository.jboss.org/nexus/content/groups/public/.error=Could not transfer artifact org.objenesis\:objenesis\:jar\:1.2 from/to jboss (https\://repository.jboss.org/nexus/content/groups/public/)\: Transfer failed for https\://repository.jboss.org/nexus/content/groups/public/org/objenesis/objenesis/1.2/objenesis-1.2.jar
+@default-jboss-https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1586847095893

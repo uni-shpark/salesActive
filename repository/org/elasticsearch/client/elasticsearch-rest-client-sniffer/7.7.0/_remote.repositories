@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 18:26:43 KST 2020
+elasticsearch-rest-client-sniffer-7.7.0.jar>central=
+elasticsearch-rest-client-sniffer-7.7.0-sources.jar>central=
+elasticsearch-rest-client-sniffer-7.7.0.pom>central=

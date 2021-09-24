@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:50:02 KST 2020
+transport-netty4-client-6.8.8-sources.jar>central=
+transport-netty4-client-6.8.8.jar>central=
+transport-netty4-client-6.8.8.pom>central=

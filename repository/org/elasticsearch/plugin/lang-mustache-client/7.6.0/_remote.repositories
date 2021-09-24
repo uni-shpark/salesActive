@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 18:10:44 KST 2020
+lang-mustache-client-7.6.0-sources.jar>central=
+lang-mustache-client-7.6.0.jar>central=
+lang-mustache-client-7.6.0.pom>central=

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ JBoss, Home of Professional Open Source.
+  ~ Copyright 2010, Red Hat, Inc., and individual contributors
+  ~ as indicated by the @author tags. See the copyright.txt file in the
+  ~ distribution for a full listing of individual contributors.
+  ~
+  ~ This is free software; you can redistribute it and/or modify it
+  ~ under the terms of the GNU Lesser General Public License as
+  ~ published by the Free Software Foundation; either version 2.1 of
+  ~ the License, or (at your option) any later version.
+  ~
+  ~ This software is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~ Lesser General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Lesser General Public
+  ~ License along with this software; if not, write to the Free
+  ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+  ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>jboss-parent</artifactId>
+        <groupId>org.jboss</groupId>
+        <version>26</version>
+    </parent>
+    <groupId>org.wildfly.plugins</groupId>
+    <artifactId>wildfly-maven-plugin-parent</artifactId>
+    <version>1.2.2.Final</version>
+    <packaging>pom</packaging>
+    <name>WildFly Maven Plugin - Parent</name>
+
+    <description>A maven plugin that allows various management operations to be executed on WildFly Application
+        Server.
+    </description>
+    <url>http://www.wildfly.org</url>
+
+    <issueManagement>
+        <system>JIRA</system>
+        <url>https://issues.jboss.org/browse/WFMP</url>
+    </issueManagement>
+
+    <mailingLists>
+        <mailingList>
+            <name>JBoss User List</name>
+            <subscribe>https://lists.jboss.org/mailman/listinfo/jboss-user</subscribe>
+            <unsubscribe>https://lists.jboss.org/mailman/listinfo/jboss-user</unsubscribe>
+            <archive>http://lists.jboss.org/pipermail/jboss-user/</archive>
+        </mailingList>
+        <mailingList>
+            <name>WildFly Developer List</name>
+            <subscribe>https://lists.jboss.org/mailman/listinfo/wildfly-dev</subscribe>
+            <unsubscribe>https://lists.jboss.org/mailman/listinfo/wildfly-dev</unsubscribe>
+            <archive>http://lists.jboss.org/pipermail/wildfly-dev/</archive>
+        </mailingList>
+    </mailingLists>
+
+    <scm>
+        <connection>${wildfly.scm.connection}</connection>
+        <developerConnection>${wildfly.scm.developer.connection}</developerConnection>
+        <url>${wildfly.scm.url}</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License v2.1 only</name>
+            <url>http://repository.jboss.org/licenses/lgpl-2.1.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+
+    <properties>
+        <!-- WildFly/JBoss dependencies -->
+        <version.org.jboss.jdf.stacks-client>1.0.3.Final</version.org.jboss.jdf.stacks-client>
+        <version.org.jboss.logging.jboss-logging>3.3.1.Final</version.org.jboss.logging.jboss-logging>
+        <version.org.jboss.logmanager>2.0.9.Final</version.org.jboss.logmanager>
+        <version.org.jboss.modules>1.8.1.Final</version.org.jboss.modules>
+        <version.org.wildfly.checkstyle-config>1.0.6.Final</version.org.wildfly.checkstyle-config>
+        <version.org.wildfly.common.wildfly-common>1.3.1.Final</version.org.wildfly.common.wildfly-common>
+        <version.org.wildfly.core>3.1.0.Final</version.org.wildfly.core>
+        <version.org.wildfly.dist>10.1.0.Final</version.org.wildfly.dist>
+
+        <!-- maven dependencies -->
+        <version.javax.inject.javax.inject>1</version.javax.inject.javax.inject>
+        <version.org.apache.maven.maven-core>3.3.1</version.org.apache.maven.maven-core>
+        <version.org.apache.maven.plugin-testing.maven-plugin-testing-harness>3.3.0
+        </version.org.apache.maven.plugin-testing.maven-plugin-testing-harness>
+        <version.org.apache.maven.plugin-tools>3.5.1</version.org.apache.maven.plugin-tools>
+        <version.org.eclipse.aether>1.1.0</version.org.eclipse.aether>
+        <version.org.eclipse.sisu>0.3.3</version.org.eclipse.sisu>
+
+        <!-- other dependencies -->
+        <version.junit.junit>4.12</version.junit.junit>
+        <version.org.apache.commons.compress>1.16.1</version.org.apache.commons.compress>
+        <version.org.mockito.mockito>2.18.3</version.org.mockito.mockito>
+
+        <!-- plugin versions -->
+        <version.plugin.plugin>3.5</version.plugin.plugin>
+
+        <!-- checkstyle configuration -->
+        <linkXRef>false</linkXRef>
+
+        <!-- documentation properties -->
+        <appServerName>WildFly</appServerName>
+        <pluginPrefix>wildfly</pluginPrefix>
+
+        <wildfly.scm.connection>scm:git://github.com/wildfly/wildfly-maven-plugin.git</wildfly.scm.connection>
+        <wildfly.scm.developer.connection>scm:git:git@github.com:wildfly/wildfly-maven-plugin.git
+        </wildfly.scm.developer.connection>
+        <wildfly.scm.url>http://github.com/wildfly/wildfly-maven-plugin</wildfly.scm.url>
+
+        <!-- Other properties -->
+        <maven.test.redirectTestOutputToFile>true</maven.test.redirectTestOutputToFile>
+    </properties>
+
+    <modules>
+        <module>core</module>
+        <module>plugin</module>
+        <module>tests</module>
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.eclipse.sisu</groupId>
+                    <artifactId>sisu-maven-plugin</artifactId>
+                    <version>${version.org.eclipse.sisu}</version>
+                </plugin>
+
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <configuration>
+                        <redirectTestOutputToFile>${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <configLocation>wildfly-checkstyle/checkstyle.xml</configLocation>
+                    <consoleOutput>true</consoleOutput>
+                    <excludes>**/HelpMojo.java</excludes>
+                    <failsOnError>true</failsOnError>
+                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                    <useFile/>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.wildfly.checkstyle</groupId>
+                        <artifactId>wildfly-checkstyle-config</artifactId>
+                        <version>${version.org.wildfly.checkstyle-config}</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>check-style</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>checkstyle</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-site-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>${version.javax.inject.javax.inject}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-compress</artifactId>
+                <version>${version.org.apache.commons.compress}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-core</artifactId>
+                <version>${version.org.apache.maven.maven-core}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-plugin-api</artifactId>
+                <version>${version.org.apache.maven.maven-core}</version>
+            </dependency>
+            <!-- dependencies to annotations -->
+            <dependency>
+                <groupId>org.apache.maven.plugin-tools</groupId>
+                <artifactId>maven-plugin-annotations</artifactId>
+                <version>${version.org.apache.maven.plugin-tools}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.aether</groupId>
+                <artifactId>aether-api</artifactId>
+                <version>${version.org.eclipse.aether}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.logging</groupId>
+                <artifactId>jboss-logging</artifactId>
+                <version>${version.org.jboss.logging.jboss-logging}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.jdf</groupId>
+                <artifactId>stacks-client</artifactId>
+                <version>${version.org.jboss.jdf.stacks-client}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.modules</groupId>
+                <artifactId>jboss-modules</artifactId>
+                <version>${version.org.jboss.modules}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.wildfly.common</groupId>
+                <artifactId>wildfly-common</artifactId>
+                <version>${version.org.wildfly.common.wildfly-common}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.wildfly.core</groupId>
+                <artifactId>wildfly-cli</artifactId>
+                <version>${version.org.wildfly.core}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.jboss.logging</groupId>
+                        <artifactId>jboss-logging-processor</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.jboss.logmanager</groupId>
+                        <artifactId>jboss-logmanager</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-plugin-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.wildfly.checkstyle</groupId>
+                <artifactId>wildfly-checkstyle-config</artifactId>
+                <version>${version.org.wildfly.checkstyle-config}</version>
+                <!-- only needed during compile -->
+                <scope>provided</scope>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>org.wildfly.core</groupId>
+                <artifactId>wildfly-controller-client</artifactId>
+                <version>${version.org.wildfly.core}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.wildfly.core</groupId>
+                <artifactId>wildfly-launcher</artifactId>
+                <version>${version.org.wildfly.core}</version>
+            </dependency>
+            <!-- Seems to be needed as the controller client is transitively bringing it in -->
+            <dependency>
+                <groupId>org.wildfly.core</groupId>
+                <artifactId>wildfly-protocol</artifactId>
+                <version>${version.org.wildfly.core}</version>
+            </dependency>
+
+            <!-- Test dependencies -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${version.junit.junit}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-compat</artifactId>
+                <version>${version.org.apache.maven.maven-core}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-settings-builder</artifactId>
+                <version>${version.org.apache.maven.maven-core}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.plugin-testing</groupId>
+                <artifactId>maven-plugin-testing-harness</artifactId>
+                <version>${version.org.apache.maven.plugin-testing.maven-plugin-testing-harness}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.logmanager</groupId>
+                <artifactId>jboss-logmanager</artifactId>
+                <version>${version.org.jboss.logmanager}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${version.org.mockito.mockito}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>create-site</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>javadoc</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-site-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>create-site</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>site</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

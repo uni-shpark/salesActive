@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ JBoss, Home of Professional Open Source
+  ~ Copyright 2018, Red Hat, Inc., and individual contributors as indicated
+  ~ by the @authors tag.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>jboss-parent</artifactId>
+        <groupId>org.jboss</groupId>
+        <version>28</version>
+    </parent>
+
+    <groupId>org.wildfly.bom</groupId>
+    <artifactId>wildfly</artifactId>
+    <!--
+    Maintain separation between the artifact id and the version to help prevent
+    merge conflicts between commits changing the GA and those changing the V.
+    -->
+    <version>14.0.1.Final</version>
+
+    <packaging>pom</packaging>
+
+    <name>WildFly BOMs: Parent Aggregator</name>
+
+    <url>http://www.wildfly.org</url>
+
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:https://github.com/wildfly/boms.git</connection>
+        <developerConnection>scm:git:https://github.com/wildfly/boms.git</developerConnection>
+        <url>http://github.com/wildfly/boms</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>wildfly.org</id>
+            <name>WildFly.org Community</name>
+            <organization>WildFly.org</organization>
+            <organizationUrl>http://www.wildfly.org</organizationUrl>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>JIRA</system>
+        <url>https://issues.jboss.org/</url>
+    </issueManagement>
+
+    <modules>
+        <module>client</module>
+        <module>javaee8</module>
+    </modules>
+
+</project>
