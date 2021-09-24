@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu May 28 17:51:08 KST 2020
+elasticsearch-ssl-config-7.6.2-sources.jar>central=
+elasticsearch-ssl-config-7.6.2.jar>central=
+elasticsearch-ssl-config-7.6.2.pom>central=

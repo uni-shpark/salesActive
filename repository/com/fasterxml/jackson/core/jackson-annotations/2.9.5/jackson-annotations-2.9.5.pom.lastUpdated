@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Apr 14 15:51:29 KST 2020
+https\://repo.maven.apache.org/maven2/.lastUpdated=1586847089312
+https\://repository.jboss.org/nexus/content/groups/public/.error=Could not transfer artifact com.fasterxml.jackson.core\:jackson-annotations\:pom\:2.9.5 from/to jboss (https\://repository.jboss.org/nexus/content/groups/public/)\: Transfer failed for https\://repository.jboss.org/nexus/content/groups/public/com/fasterxml/jackson/core/jackson-annotations/2.9.5/jackson-annotations-2.9.5.pom
+@default-jboss-https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1586847088703

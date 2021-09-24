@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <parent>
+    <groupId>org.arquillian.spacelift</groupId>
+    <artifactId>arquillian-spacelift-aggregator</artifactId>
+    <version>1.0.2</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <properties>
+    <version.commons.compress>1.8.1</version.commons.compress>
+  </properties>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>arquillian-spacelift</artifactId>
+
+  <name>Arquillian Spacelift Implementation</name>
+  <description>Arquillian Process and Package Manager</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.arquillian.spacelift</groupId>
+      <artifactId>arquillian-spacelift-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-compress</artifactId>
+      <version>${version.commons.compress}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jul 09 11:17:35 KST 2020
+spring-boot-2.3.1.RELEASE.jar>central=
+spring-boot-2.3.1.RELEASE.pom>central=
+spring-boot-2.3.1.RELEASE-sources.jar>central=

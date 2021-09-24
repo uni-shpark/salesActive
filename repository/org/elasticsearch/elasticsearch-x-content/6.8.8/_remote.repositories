@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:49:01 KST 2020
+elasticsearch-x-content-6.8.8-sources.jar>central=
+elasticsearch-x-content-6.8.8.jar>central=
+elasticsearch-x-content-6.8.8.pom>central=

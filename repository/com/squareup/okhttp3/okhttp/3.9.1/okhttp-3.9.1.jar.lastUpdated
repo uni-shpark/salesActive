@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Apr 14 15:52:06 KST 2020
+https\://repo.maven.apache.org/maven2/.lastUpdated=1586847126257
+https\://repository.jboss.org/nexus/content/groups/public/.error=Could not transfer artifact com.squareup.okhttp3\:okhttp\:jar\:3.9.1 from/to jboss (https\://repository.jboss.org/nexus/content/groups/public/)\: Transfer failed for https\://repository.jboss.org/nexus/content/groups/public/com/squareup/okhttp3/okhttp/3.9.1/okhttp-3.9.1.jar
+@default-jboss-https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1586847096020

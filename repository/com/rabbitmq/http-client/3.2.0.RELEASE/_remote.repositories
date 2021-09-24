@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu May 21 16:55:37 KST 2020
+http-client-3.2.0.RELEASE-sources.jar>central=
+http-client-3.2.0.RELEASE.jar>central=
+http-client-3.2.0.RELEASE.pom>central=

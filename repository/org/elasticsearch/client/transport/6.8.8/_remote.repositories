@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:48:52 KST 2020
+transport-6.8.8-sources.jar>central=
+transport-6.8.8.jar>central=
+transport-6.8.8.pom>central=

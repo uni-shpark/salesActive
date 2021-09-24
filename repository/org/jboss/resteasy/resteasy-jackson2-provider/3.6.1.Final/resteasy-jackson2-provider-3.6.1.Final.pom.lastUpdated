@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Apr 14 15:51:28 KST 2020
+https\://repo.maven.apache.org/maven2/.lastUpdated=1586847088692
+https\://repository.jboss.org/nexus/content/groups/public/.error=Could not transfer artifact org.jboss.resteasy\:resteasy-jackson2-provider\:pom\:3.6.1.Final from/to jboss (https\://repository.jboss.org/nexus/content/groups/public/)\: Transfer failed for https\://repository.jboss.org/nexus/content/groups/public/org/jboss/resteasy/resteasy-jackson2-provider/3.6.1.Final/resteasy-jackson2-provider-3.6.1.Final.pom
+@default-jboss-https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1586847088078

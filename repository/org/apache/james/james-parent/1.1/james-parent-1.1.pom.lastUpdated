@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Apr 14 15:51:26 KST 2020
+https\://repo.maven.apache.org/maven2/.lastUpdated=1586847086811
+https\://repository.jboss.org/nexus/content/groups/public/.error=Could not transfer artifact org.apache.james\:james-parent\:pom\:1.1 from/to jboss (https\://repository.jboss.org/nexus/content/groups/public/)\: Transfer failed for https\://repository.jboss.org/nexus/content/groups/public/org/apache/james/james-parent/1.1/james-parent-1.1.pom
+@default-jboss-https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1586847086166
