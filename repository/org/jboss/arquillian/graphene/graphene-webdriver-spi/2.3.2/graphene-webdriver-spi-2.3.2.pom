@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.jboss.arquillian.graphene</groupId>
+        <artifactId>graphene-parent</artifactId>
+        <version>2.3.2</version>
+    </parent>
+
+    <artifactId>graphene-webdriver-spi</artifactId>
+
+    <name>Graphene: SPI</name>
+
+    <dependencies>
+        <!-- Runtime dependencies-->
+        <dependency>
+            <groupId>org.jboss.arquillian.core</groupId>
+            <artifactId>arquillian-core-spi</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.arquillian.test</groupId>
+            <artifactId>arquillian-test-spi</artifactId>
+        </dependency>
+
+        <!-- Provided dependencies -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>cglib</groupId>
+                    <artifactId>cglib-nodep</artifactId>           
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- Arquillian & Drone SPI -->
+        <dependency>
+            <groupId>org.jboss.arquillian.extension</groupId>
+            <artifactId>arquillian-drone-configuration</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>         
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

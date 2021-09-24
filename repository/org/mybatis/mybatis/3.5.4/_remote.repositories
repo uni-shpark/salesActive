@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu May 21 16:53:55 KST 2020
+mybatis-3.5.4.jar>central=
+mybatis-3.5.4.pom>central=
+mybatis-3.5.4-sources.jar>central=

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: salesactive
+  namespace: sellers
+spec:
+  selector:
+    matchLabels:
+      app: salesactive
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: salesactive
+        version: v1
+      annotations:
+        sidecar.istio.io/inject: 'true'
+    spec:
+      containers:
+        - image: suhyung007/sellers:salesactive-9
+          name: salesactive
+          hostname: salesactive
+          ports:
+            - containerPort: 8080

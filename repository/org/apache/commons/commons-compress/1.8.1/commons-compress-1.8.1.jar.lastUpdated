@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Apr 14 15:52:06 KST 2020
+https\://repo.maven.apache.org/maven2/.lastUpdated=1586847126210
+https\://repository.jboss.org/nexus/content/groups/public/.error=Could not transfer artifact org.apache.commons\:commons-compress\:jar\:1.8.1 from/to jboss (https\://repository.jboss.org/nexus/content/groups/public/)\: Transfer failed for https\://repository.jboss.org/nexus/content/groups/public/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar
+@default-jboss-https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1586847095900

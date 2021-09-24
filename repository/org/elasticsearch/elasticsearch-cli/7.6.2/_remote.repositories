@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 22:59:46 KST 2020
+elasticsearch-cli-7.6.2.pom>central=
+elasticsearch-cli-7.6.2-sources.jar>central=
+elasticsearch-cli-7.6.2.jar>central=

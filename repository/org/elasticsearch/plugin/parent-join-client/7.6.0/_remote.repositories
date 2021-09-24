@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 18:10:37 KST 2020
+parent-join-client-7.6.0.pom>central=
+parent-join-client-7.6.0.jar>central=
+parent-join-client-7.6.0-sources.jar>central=
