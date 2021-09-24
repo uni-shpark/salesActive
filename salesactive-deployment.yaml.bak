@@ -17,7 +17,7 @@ spec:
         sidecar.istio.io/inject: 'true'
     spec:
       containers:
-        - image: suhyung007/sellers:salesactive-8
+        - image: suhyung007/sellers:salesactive-7
           name: salesactive
           hostname: salesactive
           ports:
